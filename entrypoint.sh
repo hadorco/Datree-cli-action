@@ -3,5 +3,5 @@
 echo "Hello"
 time=$(date)
 echo "::set-output name=time::$time"
-docker pull datree/datree
+curl https://get.datree.io | /bin/bash
 datree test /action.yml
