@@ -2,8 +2,8 @@ name: Datree CLI
 description: Use the Datree CLI in a github action
 author: hadarco
 inputs:
-  token:
-    description: test
+  options:
+    description: set the command options for your datree CLI
     required: false
 runs:
   using: docker
