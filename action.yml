@@ -3,17 +3,8 @@ description: Use the Datree CLI in a github action
 author: hadarco
 inputs:
   token:
-    description: Rancher Token for logging in.
-    required: true
-  context:
-    description: Context of the project to access. (AKA Project ID)
-    required: true
-  url:
-    description: URL of the Rancher instance.
-    required: true
-  command:
-    description: Command you want to run.
-    required: true
+    description: test
+    required: false
 runs:
   using: docker
   image: Dockerfile
