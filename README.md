@@ -1,6 +1,6 @@
 # Overview
 The datree CLI provides a policy enforcement solution to run automatic checks for rule violations in Kuberenetes configuration files.<br/>
-This action runs the Datree CLI against a given Kubernetes configuration file in your repository.<br/>
+This action runs the Datree CLI against a given Kubernetes configuration file/s in your repository.<br/>
 To learn more about datree, please visit the [datree website](https://www.datree.io/).
 
 # Setup
@@ -9,7 +9,7 @@ To get started, follow these steps:
 2. Set DATREE_TOKEN as a [secret](https://docs.github.com/en/actions/reference/encrypted-secrets) or [environment](https://docs.github.com/en/actions/reference/environment-variables) variable
 
 # Usage
-An example workflow that uses this action to run the CLI on a file and generate a report in simple text only, while using Kubernetes version 1.20.0:
+Here is an example workflow that uses this action to run the CLI on a file and generate a report in simple text only, while using Kubernetes version 1.20.0:
 ```yaml
 on:
   push:
@@ -47,8 +47,8 @@ For example, the following step will check all of the .yaml files under the curr
 
 ## Datree CLI Options
 
-| Flag                       | Alias  | Values          | Description                                                                          |
-|:---------------------------|:-------|:----------------|:-------------------------------------------------------------------------------------|
+| Flag                    | Alias  | Values          | Description                                                                          |
+|:------------------------|:-------|:----------------|:-------------------------------------------------------------------------------------|
 | --help                  | -h     | N/A             |Prints help, if you give it a command then it will print help for that command        |
 | --output                | -o     | json, yaml, xml |Output the policy check results in the requested format                               |
 | --output                | -o     | simple          |Output the policy check results in simple text (without emoji or colors)              |
