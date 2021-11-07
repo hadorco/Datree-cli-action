@@ -1,6 +1,6 @@
 # Overview
-The datree CLI provides a policy enforcement solution to run automatic checks for rule violations in Kuberenetes configuration files.
-This action runs the Datree CLI against a given Kubernetes configuration file in your repository.
+The datree CLI provides a policy enforcement solution to run automatic checks for rule violations in Kuberenetes configuration files.<br/>
+This action runs the Datree CLI against a given Kubernetes configuration file in your repository.<br/>
 To read more about datree, please visit the [datree website](https://www.datree.io/).
 
 # Setup
