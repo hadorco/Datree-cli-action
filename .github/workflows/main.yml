@@ -13,4 +13,4 @@ jobs:
         uses: hadorco/Datree-cli-action@main
         with:
           file: 'testing2/try.yaml'
-          options: '--output'
+          options: '--output simple'
