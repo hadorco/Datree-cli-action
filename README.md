@@ -46,3 +46,5 @@ jobs:
 |--ignore-missing-schemas| N/A | N/A |Skip files with missing schemas instead of failing the schema validation check|
 |--policy | -p | e.g. staging | Specifying which policy to execute (by policy name)|
 |--only-k8s-files| N/A | N/A | Skip all none K8s files<br/>Especially useful when scanning a dir with K8s and other config files:<br/>datree test *.yaml --only-k8s-files|
+
+Glob
