@@ -28,23 +28,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         
-      - name: Run Datree's policy check
+      - name: Run Datree's CLI
         uses: hadorco/Datree-cli-action@main
         with:
           file: 'somedirectory/somefile.yaml'
           options: '--output simple --schema-version 1.20.0'
 ```
 
+<br/>You can also use a [Glob pattern](https://www.digitalocean.com/community/tools/glob) to have the CLI check multiple files.
+For example, the following step will check all of the .yaml files under the current directory:
+```yaml
+- name: Run Datree's policy check
+        uses: hadorco/Datree-cli-action@main
+        with:
+          file: '**/*.yaml'
+          options: ''
+```
+
 ## Datree CLI Options
 
-| Flag        | Alias        | Values  | Description |
-|:------------|:-------------|:--------|:------------|
-| --help      | -h           | N/A     |Prints help, if you give it a command then it will print help for that command|
-| --output    | -o           | json, yaml, xml |Output the policy check results in the requested format|
-| --output    | -o           | simple  |Output the policy check results in simple text (without emoji or colors)|
-|--schema-version| -s | e.g. "1.20.0" |Set Kubernetes version to validate against<br/>Defaults to 1.18.0 (default "1.18.0")|
-|--ignore-missing-schemas| N/A | N/A |Skip files with missing schemas instead of failing the schema validation check|
-|--policy | -p | e.g. staging | Specifying which policy to execute (by policy name)|
-|--only-k8s-files| N/A | N/A | Skip all none K8s files<br/>Especially useful when scanning a dir with K8s and other config files:<br/>datree test *.yaml --only-k8s-files|
-
-Glob
+| Flag                       | Alias  | Values          | Description                                                                          |
+|:---------------------------|:-------|:----------------|:-------------------------------------------------------------------------------------|
+| --help                  | -h     | N/A             |Prints help, if you give it a command then it will print help for that command        |
+| --output                | -o     | json, yaml, xml |Output the policy check results in the requested format                               |
+| --output                | -o     | simple          |Output the policy check results in simple text (without emoji or colors)              |
+|--schema-version         | -s     | e.g. "1.20.0"   |Set Kubernetes version to validate against<br/>Defaults to 1.18.0 (default "1.18.0")  |
+|--ignore-missing-schemas | N/A    | N/A             |Skip files with missing schemas instead of failing the schema validation check        |
+|--policy                 | -p     | e.g. staging    | Specifying which policy to execute (by policy name)                                  |
+|--only-k8s-files         | N/A    | N/A             | Skip all none K8s files<br/>Especially useful when scanning a dir with K8s and other config files:<br/>datree test *.yaml --only-k8s-files|
