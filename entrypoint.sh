@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
+inputfile="$INPUT_FILE"
 options="$INPUT_OPTIONS"
 
 curl https://get.datree.io | /bin/bash
-datree test **/*.yaml $options
+datree test $inputfile $options
