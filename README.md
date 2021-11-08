@@ -60,4 +60,4 @@ For example, the following step will check all of the .yaml files under the curr
 ### Demo File
 In the "Demo" folder of this repository is an example file you can run the CLI on to see how a datree looks.
 The output 
-![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
+![Alt text](/Resources/output.jpg?raw=true "Optional Title")
