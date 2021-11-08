@@ -58,6 +58,7 @@ For example, the following step will check all of the .yaml files under the curr
 |--only-k8s-files         | N/A    | N/A             | Skip all none K8s files<br/>Especially useful when scanning a dir with K8s and other config files:<br/>datree test *.yaml --only-k8s-files|
 
 ### Demo File
-In the "Demo" folder of this repository is an example file you can run the CLI on to see how a datree looks.
-The output 
+In the "Demo" folder of this repository is an example file you can run the CLI on.
+<br/>Its output will look like this:
+
 ![Alt text](/Resources/output.jpg?raw=true "Optional Title")
