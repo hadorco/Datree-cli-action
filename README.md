@@ -56,3 +56,8 @@ For example, the following step will check all of the .yaml files under the curr
 |--ignore-missing-schemas | N/A    | N/A             |Skip files with missing schemas instead of failing the schema validation check        |
 |--policy                 | -p     | e.g. staging    | Specifying which policy to execute (by policy name)                                  |
 |--only-k8s-files         | N/A    | N/A             | Skip all none K8s files<br/>Especially useful when scanning a dir with K8s and other config files:<br/>datree test *.yaml --only-k8s-files|
+
+### Demo File
+In the "Demo" folder of this repository is an example file you can run the CLI on to see how a datree looks.
+The output 
+![Alt text](/relative/path/to/img.jpg?raw=true "Optional Title")
